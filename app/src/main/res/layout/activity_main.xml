@@ -11,22 +11,48 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
         android:layout_margin="10dp"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="390dp"
-            android:background="@color/white"
-            android:layout_height="120dp">
+        android:orientation="horizontal"
+        android:padding="10dp">
 
-        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/expressionTV"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:text="0"
+                android:textSize="30sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/resultTV"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:text="0"
+                android:textAlignment="textEnd"
+                android:textSize="50sp">
+
+            </TextView>
+
+
+        </LinearLayout>
 
         <Button
             android:layout_width="65dp"
             android:layout_height="72dp"
+            android:layout_marginLeft="25dp"
             android:backgroundTint="@color/white"
             android:text="C"
-            android:layout_marginLeft="25dp"
             android:textColor="#151414"
             android:textSize="30sp"
             app:cornerRadius="500dp">
@@ -36,9 +62,9 @@
         <Button
             android:layout_width="65dp"
             android:layout_height="72dp"
+            android:layout_marginLeft="20dp"
             android:backgroundTint="@color/white"
             android:text="("
-            android:layout_marginLeft="20dp"
             android:textColor="#151414"
             android:textSize="30sp"
             app:cornerRadius="500dp">
@@ -48,9 +74,9 @@
         <Button
             android:layout_width="65dp"
             android:layout_height="72dp"
+            android:layout_marginLeft="20dp"
             android:backgroundTint="@color/white"
             android:text=")"
-            android:layout_marginLeft="20dp"
             android:textColor="#151414"
             android:textSize="30sp"
             app:cornerRadius="500dp">
@@ -60,9 +86,9 @@
         <Button
             android:layout_width="65dp"
             android:layout_height="72dp"
+            android:layout_marginLeft="20dp"
             android:backgroundTint="@color/white"
             android:text="/"
-            android:layout_marginLeft="20dp"
             android:textColor="#03A9F4"
             android:textSize="30sp"
             app:cornerRadius="500dp">
@@ -73,16 +99,78 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
         android:layout_margin="10dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="10dp">
 
         <Button
+            android:id="@+id/clearBtn"
             android:layout_width="65dp"
             android:layout_height="72dp"
+            android:layout_marginLeft="25dp"
+            android:backgroundTint="@color/white"
+            android:text="C"
+            android:textColor="#151414"
+            android:textSize="30sp"
+            app:cornerRadius="500dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/openingBracketBtn"
+            android:layout_width="65dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/white"
+            android:text="("
+            android:textColor="#151414"
+            android:textSize="30sp"
+            app:cornerRadius="500dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/closingBracketBtn"
+            android:layout_width="65dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/white"
+            android:text=")"
+            android:textColor="#151414"
+            android:textSize="30sp"
+            app:cornerRadius="500dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/divisionBtn"
+            android:layout_width="65dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/white"
+            android:text="%"
+            android:textColor="#03A9F4"
+            android:textSize="30sp"
+            app:cornerRadius="500dp">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/sevenBtn"
+            android:layout_width="65dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="25dp"
             android:backgroundTint="@color/white"
             android:text="7"
-            android:layout_marginLeft="25dp"
             android:textColor="#151414"
             android:textSize="30sp"
             app:cornerRadius="500dp">
@@ -90,11 +178,12 @@
         </Button>
 
         <Button
+            android:id="@+id/eightBtn"
             android:layout_width="65dp"
             android:layout_height="72dp"
+            android:layout_marginLeft="20dp"
             android:backgroundTint="@color/white"
             android:text="8"
-            android:layout_marginLeft="20dp"
             android:textColor="#151414"
             android:textSize="30sp"
             app:cornerRadius="500dp">
@@ -102,11 +191,12 @@
         </Button>
 
         <Button
+            android:id="@+id/nineBtn"
             android:layout_width="65dp"
             android:layout_height="72dp"
+            android:layout_marginLeft="20dp"
             android:backgroundTint="@color/white"
             android:text="9"
-            android:layout_marginLeft="20dp"
             android:textColor="#151414"
             android:textSize="30sp"
             app:cornerRadius="500dp">
@@ -114,11 +204,12 @@
         </Button>
 
         <Button
+            android:id="@+id/multiplyBtn"
             android:layout_width="65dp"
             android:layout_height="72dp"
+            android:layout_marginLeft="20dp"
             android:backgroundTint="@color/white"
             android:text="x"
-            android:layout_marginLeft="20dp"
             android:textColor="#03A9F4"
             android:textSize="30sp"
             app:cornerRadius="500dp">
@@ -126,19 +217,21 @@
         </Button>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
         android:layout_margin="10dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="10dp">
 
         <Button
+            android:id="@+id/fourBtn"
             android:layout_width="65dp"
             android:layout_height="72dp"
+            android:layout_marginLeft="25dp"
             android:backgroundTint="@color/white"
             android:text="4"
-            android:layout_marginLeft="25dp"
             android:textColor="#151414"
             android:textSize="30sp"
             app:cornerRadius="500dp">
@@ -146,11 +239,12 @@
         </Button>
 
         <Button
+            android:id="@+id/fiveBtn"
             android:layout_width="65dp"
             android:layout_height="72dp"
+            android:layout_marginLeft="20dp"
             android:backgroundTint="@color/white"
             android:text="5"
-            android:layout_marginLeft="20dp"
             android:textColor="#151414"
             android:textSize="30sp"
             app:cornerRadius="500dp">
@@ -158,11 +252,12 @@
         </Button>
 
         <Button
+            android:id="@+id/sixBtn"
             android:layout_width="65dp"
             android:layout_height="72dp"
+            android:layout_marginLeft="20dp"
             android:backgroundTint="@color/white"
             android:text="6"
-            android:layout_marginLeft="20dp"
             android:textColor="#151414"
             android:textSize="30sp"
             app:cornerRadius="500dp">
@@ -170,11 +265,12 @@
         </Button>
 
         <Button
+            android:id="@+id/minusBtn"
             android:layout_width="65dp"
             android:layout_height="72dp"
+            android:layout_marginLeft="20dp"
             android:backgroundTint="@color/white"
             android:text="-"
-            android:layout_marginLeft="20dp"
             android:textColor="#03A9F4"
             android:textSize="30sp"
             app:cornerRadius="500dp">
@@ -182,19 +278,21 @@
         </Button>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
         android:layout_margin="10dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="10dp">
 
         <Button
+            android:id="@+id/oneBtn"
             android:layout_width="65dp"
             android:layout_height="72dp"
+            android:layout_marginLeft="25dp"
             android:backgroundTint="@color/white"
             android:text="1"
-            android:layout_marginLeft="25dp"
             android:textColor="#151414"
             android:textSize="30sp"
             app:cornerRadius="500dp">
@@ -202,11 +300,12 @@
         </Button>
 
         <Button
+            android:id="@+id/twoBtn"
             android:layout_width="65dp"
             android:layout_height="72dp"
+            android:layout_marginLeft="20dp"
             android:backgroundTint="@color/white"
             android:text="2"
-            android:layout_marginLeft="20dp"
             android:textColor="#151414"
             android:textSize="30sp"
             app:cornerRadius="500dp">
@@ -214,11 +313,12 @@
         </Button>
 
         <Button
+            android:id="@+id/threeBtn"
             android:layout_width="65dp"
             android:layout_height="72dp"
+            android:layout_marginLeft="20dp"
             android:backgroundTint="@color/white"
             android:text="3"
-            android:layout_marginLeft="20dp"
             android:textColor="#151414"
             android:textSize="30sp"
             app:cornerRadius="500dp">
@@ -226,11 +326,12 @@
         </Button>
 
         <Button
+            android:id="@+id/plusBtn"
             android:layout_width="65dp"
             android:layout_height="72dp"
+            android:layout_marginLeft="20dp"
             android:backgroundTint="@color/white"
             android:text="+"
-            android:layout_marginLeft="20dp"
             android:textColor="#03A9F4"
             android:textSize="30sp"
             app:cornerRadius="500dp">
@@ -238,19 +339,21 @@
         </Button>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
         android:layout_margin="10dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="10dp">
 
         <Button
+            android:id="@+id/zeroBtn"
             android:layout_width="65dp"
             android:layout_height="72dp"
+            android:layout_marginLeft="25dp"
             android:backgroundTint="@color/white"
             android:text="0"
-            android:layout_marginLeft="25dp"
             android:textColor="#151414"
             android:textSize="30sp"
             app:cornerRadius="500dp">
@@ -258,11 +361,12 @@
         </Button>
 
         <Button
+            android:id="@+id/pointBtn"
             android:layout_width="65dp"
             android:layout_height="72dp"
+            android:layout_marginLeft="20dp"
             android:backgroundTint="@color/white"
             android:text="."
-            android:layout_marginLeft="20dp"
             android:textColor="#151414"
             android:textSize="30sp"
             app:cornerRadius="500dp">
@@ -270,23 +374,26 @@
         </Button>
 
         <Button
-            android:layout_width="65dp"
+            android:id="@+id/backSpaceBtn"
+            android:layout_width="70dp"
             android:layout_height="72dp"
+            android:layout_marginLeft="20dp"
             android:backgroundTint="@color/white"
             android:text="⌫"
-            android:layout_marginLeft="20dp"
             android:textColor="#03A9F4"
-            android:textSize="25sp"
+            android:textSize="30sp"
             app:cornerRadius="500dp">
 
         </Button>
 
+
         <Button
+            android:id="@+id/equalBtn"
             android:layout_width="65dp"
             android:layout_height="72dp"
+            android:layout_marginLeft="20dp"
             android:backgroundTint="@color/white"
             android:text="="
-            android:layout_marginLeft="20dp"
             android:textColor="#03A9F4"
             android:textSize="30sp"
             app:cornerRadius="500dp">
