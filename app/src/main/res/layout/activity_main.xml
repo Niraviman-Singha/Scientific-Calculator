@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D1542"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="390dp"
+            android:background="@color/white"
+            android:layout_height="120dp">
+
+        </TextView>
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="72dp"
+            android:backgroundTint="@color/white"
+            android:text="C"
+            android:layout_marginLeft="25dp"
+            android:textColor="#151414"
+            android:textSize="30sp"
+            app:cornerRadius="500dp">
+
+        </Button>
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="72dp"
+            android:backgroundTint="@color/white"
+            android:text="("
+            android:layout_marginLeft="20dp"
+            android:textColor="#151414"
+            android:textSize="30sp"
+            app:cornerRadius="500dp">
+
+        </Button>
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="72dp"
+            android:backgroundTint="@color/white"
+            android:text=")"
+            android:layout_marginLeft="20dp"
+            android:textColor="#151414"
+            android:textSize="30sp"
+            app:cornerRadius="500dp">
+
+        </Button>
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="72dp"
+            android:backgroundTint="@color/white"
+            android:text="/"
+            android:layout_marginLeft="20dp"
+            android:textColor="#03A9F4"
+            android:textSize="30sp"
+            app:cornerRadius="500dp">
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="72dp"
+            android:backgroundTint="@color/white"
+            android:text="7"
+            android:layout_marginLeft="25dp"
+            android:textColor="#151414"
+            android:textSize="30sp"
+            app:cornerRadius="500dp">
+
+        </Button>
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="72dp"
+            android:backgroundTint="@color/white"
+            android:text="8"
+            android:layout_marginLeft="20dp"
+            android:textColor="#151414"
+            android:textSize="30sp"
+            app:cornerRadius="500dp">
+
+        </Button>
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="72dp"
+            android:backgroundTint="@color/white"
+            android:text="9"
+            android:layout_marginLeft="20dp"
+            android:textColor="#151414"
+            android:textSize="30sp"
+            app:cornerRadius="500dp">
+
+        </Button>
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="72dp"
+            android:backgroundTint="@color/white"
+            android:text="x"
+            android:layout_marginLeft="20dp"
+            android:textColor="#03A9F4"
+            android:textSize="30sp"
+            app:cornerRadius="500dp">
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="72dp"
+            android:backgroundTint="@color/white"
+            android:text="4"
+            android:layout_marginLeft="25dp"
+            android:textColor="#151414"
+            android:textSize="30sp"
+            app:cornerRadius="500dp">
+
+        </Button>
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="72dp"
+            android:backgroundTint="@color/white"
+            android:text="5"
+            android:layout_marginLeft="20dp"
+            android:textColor="#151414"
+            android:textSize="30sp"
+            app:cornerRadius="500dp">
+
+        </Button>
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="72dp"
+            android:backgroundTint="@color/white"
+            android:text="6"
+            android:layout_marginLeft="20dp"
+            android:textColor="#151414"
+            android:textSize="30sp"
+            app:cornerRadius="500dp">
+
+        </Button>
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="72dp"
+            android:backgroundTint="@color/white"
+            android:text="-"
+            android:layout_marginLeft="20dp"
+            android:textColor="#03A9F4"
+            android:textSize="30sp"
+            app:cornerRadius="500dp">
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="72dp"
+            android:backgroundTint="@color/white"
+            android:text="1"
+            android:layout_marginLeft="25dp"
+            android:textColor="#151414"
+            android:textSize="30sp"
+            app:cornerRadius="500dp">
+
+        </Button>
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="72dp"
+            android:backgroundTint="@color/white"
+            android:text="2"
+            android:layout_marginLeft="20dp"
+            android:textColor="#151414"
+            android:textSize="30sp"
+            app:cornerRadius="500dp">
+
+        </Button>
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="72dp"
+            android:backgroundTint="@color/white"
+            android:text="3"
+            android:layout_marginLeft="20dp"
+            android:textColor="#151414"
+            android:textSize="30sp"
+            app:cornerRadius="500dp">
+
+        </Button>
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="72dp"
+            android:backgroundTint="@color/white"
+            android:text="+"
+            android:layout_marginLeft="20dp"
+            android:textColor="#03A9F4"
+            android:textSize="30sp"
+            app:cornerRadius="500dp">
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="72dp"
+            android:backgroundTint="@color/white"
+            android:text="0"
+            android:layout_marginLeft="25dp"
+            android:textColor="#151414"
+            android:textSize="30sp"
+            app:cornerRadius="500dp">
+
+        </Button>
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="72dp"
+            android:backgroundTint="@color/white"
+            android:text="."
+            android:layout_marginLeft="20dp"
+            android:textColor="#151414"
+            android:textSize="30sp"
+            app:cornerRadius="500dp">
+
+        </Button>
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="72dp"
+            android:backgroundTint="@color/white"
+            android:text="⌫"
+            android:layout_marginLeft="20dp"
+            android:textColor="#03A9F4"
+            android:textSize="25sp"
+            app:cornerRadius="500dp">
+
+        </Button>
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="72dp"
+            android:backgroundTint="@color/white"
+            android:text="="
+            android:layout_marginLeft="20dp"
+            android:textColor="#03A9F4"
+            android:textSize="30sp"
+            app:cornerRadius="500dp">
+
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>
