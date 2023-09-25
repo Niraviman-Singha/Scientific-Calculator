@@ -6,6 +6,8 @@ import android.text.method.ScrollingMovementMethod
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import javax.script.ScriptEngine
+import javax.script.ScriptEngineManager
 
 class MainActivity : AppCompatActivity() {
     private lateinit var expressionTV:TextView
@@ -257,12 +259,12 @@ class MainActivity : AppCompatActivity() {
         }
         zeroBtn.setOnClickListener {
             if (expressionTV.text.toString().startsWith("0")){
-                str = expressionTV.text.toString().replace("0","")+"0"
+                str = expressionTV.text.toString().replace("0","")
                 expressionText(str)
                 resultText()
             }
             else{
-                str = expressionTV.text.toString()+"0"
+                str = expressionTV.text.toString() + "0"
                 expressionText(str)
                 resultText()
             }
@@ -300,7 +302,22 @@ class MainActivity : AppCompatActivity() {
         expressionTV.text = str
     }
     private fun resultText(){
-        val exp = expressionTV.text
+        val exp = expressionTV.text.toString()
+        val engine:ScriptEngine = ScriptEngineManager().getEngineByName("rhino")
+        try {
+            val res = engine.eval(exp)
+            if (res.toString().endsWith("0")){
+                resultTV.text = "="+ res.toString().replace("0","")
+            }
+            else{
+                resultTV.text = "+$res"
+            }
+        }
+        catch (e:Exception){
+            expressionTV.text = expressionTV.text.toString()
+            resultTV.text = resultTV.text.toString()
+        }
+
 
     }
 
